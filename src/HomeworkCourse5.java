@@ -54,10 +54,11 @@ public class HomeworkCourse5 {
             countDonatii = countDonatii + randomNumber;
             System.out.println("Donatii adunate:");
             System.out.println(countDonatii);
-            if (countDonatii==targetDonatii){
-                System.out.println("SUCCES");}
+
         }while (countDonatii<targetDonatii);
 
+        if (countDonatii>=targetDonatii){
+            System.out.println("SUCCES");}
 
 
         }
