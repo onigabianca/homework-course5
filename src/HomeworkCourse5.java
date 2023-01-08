@@ -33,8 +33,8 @@ public class HomeworkCourse5 {
         System.out.println("Functie donatii:");
         functieDonatii();
 
-        //System.out.println("Functie donatii nr max:");
-       // functieDonatiiMaxim();
+        System.out.println("Functie donatii nr max:");
+        functieDonatiiMaxim();
 
 
 
@@ -63,25 +63,29 @@ public class HomeworkCourse5 {
 
         }
 
-    //trebuia cu do while si asta doar ca am ceva gresit la primul(depaseste donatiile si atunci nu am mai modificat aceasta)
-    /*private static void functieDonatiiMaxim() {
+    private static void functieDonatiiMaxim() {
         Random random = new Random();
-        int intNumberDoi = 5;
-        int numberOfD = 12;
-        int k=0;
-        int randomNumberDoi= random.nextInt(intNumberDoi);
+        int targetDonatii = 12;
+        int countDonatii = 0;
+        int nrMaxDonatii = 2;
+        int countNrDonatii=0;
+        do {
+            int randomNumber = random.nextInt(0, targetDonatii);
+            System.out.println("Random number is:");
+            System.out.println(randomNumber);
+            countNrDonatii++;
+            countDonatii = countDonatii + randomNumber;
+            System.out.println("Donatii adunate:");
+            System.out.println(countDonatii);
 
-        while((randomNumberDoi<=intNumberDoi) && (k<numberOfD)) {
-            randomNumberDoi=random.nextInt();
-            k++;
+        } while( (countDonatii < targetDonatii) && (countNrDonatii<nrMaxDonatii)) ;
 
-            if ((randomNumberDoi == intNumberDoi) || (k>numberOfD))
-            {
-                System.out.println("Campanie incheiata");}
-
+        if (countNrDonatii>=nrMaxDonatii) {
+            System.out.println("CAMPANIE INCHEIATA");
         }
+
+
     }
-*/
     private static int[] biggerThen(int[] array, int givenNumber) {
 
         int[] newArray=new int[array.length];
